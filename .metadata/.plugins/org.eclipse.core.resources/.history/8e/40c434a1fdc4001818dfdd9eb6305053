@@ -1,0 +1,33 @@
+package algorithms;
+
+public class Staircase {
+	// Complete the staircase function below.
+    static void staircase(int n) {
+
+        char c = '#';
+        String str = " ";
+        for (int i = 0; i < n; i++) {          
+        	for (int j = 0; j < n-1; j++) {
+				str += str;
+			}
+           str += c;
+           System.out.println(str);
+        }
+    }
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		//staircase(6);
+		
+		
+		String str = " ";
+		
+		str += str;
+		
+		
+		
+		System.out.println(str + '#');
+		
+		
+	}
+}
